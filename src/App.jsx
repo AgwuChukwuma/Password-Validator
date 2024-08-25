@@ -48,6 +48,7 @@ function App() {
   } else {
     setSpecialValidated(false);
   }
+    
     if (length.test(value)) {
       setLengthValidated(true);
     } else {
@@ -129,7 +130,7 @@ function App() {
                 <Icon icon = {basic_exclamation}/>
               </span>
             )}
-            At least 8 characters
+           At least 8 characters
             </div>
         </main>
       </div>  
