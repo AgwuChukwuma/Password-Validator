@@ -63,31 +63,31 @@ function App() {
           <input type={type} className="input-text"
           onChange={(e)=>handleChange(e.target.value)}/>
           {type === "password" ? (
-            <span className="icon-span" onClick={() => setType("text")}>
+            <span className = "icon-span" onClick={() => setType("text")}>
                <Icon  icon = {basic_eye_closed} size = {18}/> </span>
           ):(
-            <span className="icon-span" onClick={() => setType("password")}>
+            <span className = "icon-span" onClick={() => setType("password")}>
              <Icon  icon = {basic_eye} size = {18}/> </span>
           )
         }
         </div>
-        <main className='tracker-box'>
-          <div className={lowerValidated?'validated':'not-validated'}>
+        <main className = 'tracker-box'>
+          <div className = {lowerValidated?'validated':'not-validated'}>
             {lowerValidated ? (
-            <span className='list-icon green'>
-                <Icon icon={arrows_circle_check}/>
+            <span className = 'list-icon green'>
+                <Icon icon = {arrows_circle_check}/>
             </span>
             ):(
-              <span className='list-icon'>
+              <span className = 'list-icon'>
                 <Icon icon = {basic_exclamation}/>
               </span>
             )}
             At least one lowercase letter
             </div>
-          <div className={upperValidated?'validated':'not-validated'}>
+          <div className = {upperValidated?'validated':'not-validated'}>
           {upperValidated ? (
-            <span className='list-icon green'>
-                <Icon icon={arrows_circle_check}/>
+            <span className = 'list-icon green'>
+                <Icon icon = {arrows_circle_check}/>
             </span>
             ):(
               <span className='list-icon'>
@@ -96,37 +96,37 @@ function App() {
             )}
             At least one uppercase letter
             </div>
-          <div className={numberValidated?'validated':'not-validated'}>
+          <div className = {numberValidated?'validated':'not-validated'}>
           {numberValidated ? (
-            <span className='list-icon green'>
-                <Icon icon={arrows_circle_check}/>
+            <span className = 'list-icon green'>
+                <Icon icon = {arrows_circle_check}/>
             </span>
             ):(
-              <span className='list-icon'>
+              <span className = 'list-icon'>
                 <Icon icon = {basic_exclamation}/>
               </span>
             )}
             At least one number
             </div>
-          <div className={specialValidated?'validated':'not-validated'}>
+          <div className = {specialValidated?'validated':'not-validated'}>
           {specialValidated ? (
-            <span className='list-icon green'>
-                <Icon icon={arrows_circle_check}/>
+            <span className = 'list-icon green'>
+                <Icon icon = {arrows_circle_check}/>
             </span>
             ):(
-              <span className='list-icon'>
+              <span className = 'list-icon'>
                 <Icon icon = {basic_exclamation}/>
               </span>
             )}
             At least one special character
             </div>
-          <div className={lengthValidated?'validated':'not-validated'}>
+          <div className = {lengthValidated?'validated':'not-validated'}>
           {lengthValidated ? (
-            <span className='list-icon green'>
-                <Icon icon={arrows_circle_check}/>
+            <span className = 'list-icon green'>
+                <Icon icon = {arrows_circle_check}/>
             </span>
             ):(
-              <span className='list-icon'>
+              <span className = 'list-icon'>
                 <Icon icon = {basic_exclamation}/>
               </span>
             )}
